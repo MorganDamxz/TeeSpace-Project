@@ -1,0 +1,28 @@
+/* Default styles for .Categories-section */
+.Categories-section {
+    width: 100%;
+    justify-content: center;
+     margin-left: 1rem; 
+}
+
+/* Default styles for .categories-text */
+.categories-text {
+    text-align: justify;
+    margin-left: 3rem;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 938px) {
+    .Categories-section {
+        margin-bottom: 1rem;
+        margin-left: 2rem; /* Adjust left margin for smaller screens */
+    }
+
+    .categories-text {
+        text-align: center; /* Center-align text for smaller screens */
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+    .categories-img{
+        display: none;
+    }
+}

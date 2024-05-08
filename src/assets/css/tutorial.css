@@ -1,0 +1,65 @@
+/* Default styles for h1 */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: -9rem;
+}
+
+/* Default styles for .tutorial-sections */
+.tutorial-sections {
+  display: flex;
+  margin-top: 4rem;
+  background-color: rgb(235, 223, 238);
+  /* padding: 5rem; */
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 10rem;
+  padding-top: 5rem;
+}
+
+.tutorial-sections .col-1 {
+  margin: 6px;
+  font-weight: 900;
+  font-size: large;
+  margin-left: 3rem;
+}
+
+.tutorial-sections span {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #2ebb77;
+  color: white;
+  margin-left: 11rem;
+}
+.tutorial-bullet span {
+  background-color: white;
+  color: #2ebb77;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  h1 {
+    margin-bottom: -6rem; /* Adjust margin for mobile */
+    margin-left: 1px;
+  }
+
+  .tutorial-sections {
+    display: block;
+    width: 90%;
+    margin-left: 0.5rem;
+    padding-top: 4rem;
+    padding-left: 1rem;
+  }
+
+  .tutorial-sections span {
+    margin-left: 2rem; /* Adjust margin for mobile */
+  }
+  .col-2 {
+    display: block;
+  }
+}

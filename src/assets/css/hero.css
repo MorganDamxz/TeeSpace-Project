@@ -1,0 +1,84 @@
+/* Default styles for .hero-section */
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(223, 240, 237);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 4rem;
+}
+
+.hero-section.col-1 {
+   width: 100%; 
+}
+
+.hero-section.col-2 {
+   width: 100%; 
+}
+
+h1 {
+   font-size: largest; 
+   font-weight: 700; 
+   margin-bottom: 0; 
+  text-align: center; /* Center heading text */
+  }
+
+#svg{margin-bottom: 2rem;
+  margin-top: 5rem;
+
+}
+#h11{
+  margin-top: 10rem;
+}
+
+ p {
+  margin-top: 3rem;
+  
+} 
+
+.hero-section button {
+  color: white;
+  background-color: #2EBB77;
+  padding: 10px 20px; /* Increase padding for better tap target on mobile */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border-radius to button */
+  margin-top: 1rem;
+  margin-left: 70px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center; /* Center items horizontally on smaller screens */
+    width: 60%; /* Adjust width for smaller screens */
+    margin-left: auto; /* Center sections horizontally on smaller screens */
+    margin-right: auto; /* Center sections horizontally on smaller screens */
+    padding: 5rem; /* Adjust padding for smaller screens */
+    padding-top: 1rem;
+    padding-bottom: 0%;
+  }
+
+  .hero-section.col-1 {
+    width: 50%; /* Make section full width on smaller screens */
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  h1 {
+    font-size: large; /* Decrease font size for smaller screens */
+ margin-top: -10rem;
+  }
+
+  .hero-section p {
+    margin-top: -2rem; /* Adjust top margin for smaller screens */
+    text-align: center; /* Center paragraph text */
+  }
+
+  .hero-section button {
+    width: 60%; /* Make button full width on smaller screens */
+   margin-bottom: 1rem;
+    margin-top: 0.5rem; /* Add top margin for better spacing on smaller screens */
+  }
+}

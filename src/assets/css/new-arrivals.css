@@ -1,0 +1,67 @@
+/* Default styles for .arrivals-section */
+.arrivals-section {
+  margin-top: 22rem; 
+  /* width: 100%; */
+  margin-right: 10rem;
+}
+
+ .mobile-arrivals{
+  display: none;
+} 
+
+.arrivals-images {
+  display: flex;
+  gap: 2px;
+  margin-left: 7rem;
+  margin-top: 2rem; 
+  justify-content: center; 
+  margin-right: 15rem; 
+  width: 100%;
+} 
+
+ .arrivals-text {
+  margin-left: 9rem;
+  margin-bottom: 3rem; 
+  margin-left: 3rem;
+  
+} 
+
+p{
+  text-align: center;
+  margin-right: 70px;
+}
+
+.arrivals-text span {
+  opacity: 0.3;
+}
+
+.childs-wear #p1{
+  color: #2EBB77;
+}
+
+.childs-wear span {
+  color: #000;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 938px) {
+    .arrivals-section {
+      display: none; 
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      /* margin-left:35px ; */
+        margin-top: 2rem; /* Adjust margin for mobile */
+    };
+
+
+   .arrivals-images{
+    display: none !important;
+   }
+
+   .mobile-arrivals{
+    display: block;
+   }
+  }

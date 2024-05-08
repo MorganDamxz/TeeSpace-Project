@@ -1,0 +1,22 @@
+/* Default styles for .sample-images */
+.sample-section{
+    width: 90%;
+}
+.sample-images {
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+    margin-left: 8rem;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .sample-images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center images horizontally on smaller screens */
+        margin-top: 2rem; /* Reduce top margin on smaller screens */
+        margin-left: auto; /* Center images horizontally on smaller screens */
+        margin-right: auto; /* Center images horizontally on smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}

@@ -1,0 +1,126 @@
+/* First navigation bar styles */
+.first {
+    /* padding: 10px; */
+    background-color: #f8f9fa; /* Adjust color as per your design */
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Center items vertically */
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 7px;
+    /* margin-left: 7rem;  */
+}
+.first-side{ 
+     display: flex; 
+     gap: 7rem; 
+     margin-bottom: 0;
+}  
+/* Logo styles */
+.first .logo img {
+    width: 120px; /* Adjust width as needed */
+    height: auto;
+}
+
+/* Search bar styles */
+.first .d-flex {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Center items horizontally */
+}
+
+.first .d-flex .form-control {
+    /* width: 80%; Make input full width */
+    /* margin: 70px; Add some space between input and button */
+    width: 260px; 
+    border-radius: 10px;
+    margin-left: 2px;
+    border-color: #dee2e6;
+}
+
+.first .d-flex button {
+    /* width: 50%; Make button full width */
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    
+}
+
+/* Button container styles */
+.first .btn {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Center items horizontally */
+    margin: 10px; /* Add some space between search and buttons */
+}
+
+/* Icon styles */
+.first .btn .icon {
+    font-size: 20px; /* Size of icons */
+    color: gray; /* Adjust color as needed */
+    cursor: pointer;
+    margin-bottom: 5px; /* Add some space between icons */
+    padding-left: 10px;
+}
+
+/* Hotline text styles */
+.first .btn .hotline {
+    color: #495057;
+    text-align: center; /* Center text horizontally */
+    margin-left: 15px;
+}
+
+.first .btn .hotline h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.first .btn .hotline p {
+    margin: 0;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+
+@media screen and (max-width: 768px) {
+    .first {
+        width: 100%; 
+        margin: 0;
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px 5px; /* Adjust padding for mobile */
+    }
+    .first .first-side{
+        display: flex;
+        gap: 0.3rem;
+    }
+
+    .first .logo img {
+        display: flex;
+        width: 100px; /* Decrease logo width for mobile */
+        margin-top: 10px;
+    }
+
+    .first .d-flex {
+        margin-left: 0.5rem;
+        flex-direction: row; /* Stack search bar and button vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .first .d-flex .form-control {
+        width: 80%; /* Make input full width */
+        margin: 5px 0; /* Adjust margin for mobile */
+    }
+
+    .first .d-flex button {
+        width: 40%; /* Make button full width */
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+
+    .first .btn {
+        margin-top: 10px; /* Add space between logo and button container */
+        align-items: center; /* Align items to the center */
+    }
+}

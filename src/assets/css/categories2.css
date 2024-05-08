@@ -1,0 +1,122 @@
+/* Default styles for .categories-card */
+.categories-card {
+    width: 100%;
+    align-content: center;
+    margin-left: 4rem; 
+}
+
+.mobile-categories{
+    display: none;
+}
+
+/* Default styles for .categories-img */
+.categories-img {
+    display: flex;
+    margin-left: 5rem; 
+    margin: 3rem; 
+    width: 87%; 
+    gap: 15px;
+}
+
+/* Default styles for .categories-card .card-title */
+.categories-card .card-title {
+    margin: -18rem 3rem;
+}
+
+/* Default styles for h2 */
+h2 {
+    margin: 0;
+}
+
+/* Default styles for p */
+p {
+    margin: 0;
+
+}
+
+/* Default styles for #txt */
+#txt {
+    margin-top: 2px;
+    text-align: left;
+}
+#txt2 {
+    margin-top: 2px;
+    text-align: left;
+}
+#txt4 {
+    margin-top: 0;
+    text-align: left;
+}
+
+/* Default styles for #btn */
+#btn {
+    margin-top: 25px;
+    border: none;
+    background: #2ebb77;
+    color: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-flex;
+    padding-top: 10px;
+    
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .categories-card {
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 0; /* Reset left margin for mobile */
+
+    }
+    
+    .categories-img {
+        display: none;
+        
+    }
+    .mobile-categories{
+        display: block;
+    }
+
+    .card-title #txt{
+        margin: 0;
+        margin-right: 10rem;
+        margin-top: 10px;
+    }
+
+    .card-title #txt2{
+        margin-right: 10rem;
+    }
+
+    .card-title #txt3{
+        margin-top: 8px;
+    }
+
+    .card-title #txt4{
+margin-top: 15px;
+    }
+    
+    .categories-card .card-title {
+        margin: 1rem 1rem; /* Adjust margin for mobile */
+    margin-top: -13rem;
+    
+    }
+    
+    h2, p {
+        text-align: justify; /* Center text for mobile */
+    
+    }
+    
+    #txt {
+        margin-right: 2rem;
+        margin-top: -25px; /* Adjust margin for mobile */
+    }
+    
+    #btn {
+        margin-top: 15px; /* Adjust margin for mobile */
+        width: 120px; /* Adjust width for mobile */
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+}

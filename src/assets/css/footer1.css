@@ -1,0 +1,67 @@
+/* Default styles for .teespace */
+.teespace {
+  width: fit-content;
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 6rem;
+}
+
+/* Default styles for .space1 */
+.space1 {
+  margin: 20px;
+  width: 250px; /* Corrected typo: changed '250x' to '250px' */
+  height: 289px;
+  margin-right: 3rem; /* Adjusted margin-right */
+}
+
+.space1 h3 {
+  color: black;
+  font-weight: 650;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.space1 .icon-bg {
+  display: flex;
+  gap: 10px;
+}
+
+/* Default styles for .space2 */
+.space2 {
+  margin: 20px;
+  width: 250px; /* Corrected typo: changed '250x' to '250px' */
+  height: 289px;
+}
+
+.space2 ol {
+  list-style-type: none;
+}
+
+.space2 ol h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.space2 ol li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #7e7e7e;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  .teespace {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .space1,
+  .space2 {
+    width: 80%; 
+    margin-left: -3rem; 
+    margin-top: -2rem;
+  }
+}
